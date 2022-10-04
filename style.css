@@ -1,252 +1,253 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-@media screen and (min-width: 375px) {
-  main {
-    position: relative;
-    font-family: "Roboto";
-    width: 100%;
-    height: 100vh;
-    margin-top: 56px;
-    background: #ffffff;
-  }
-  .title {
-    width: 170.08px;
-    height: 43.34px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body {
+    background-color: #FFFFFF;
+    font-family: 'Roboto';
+    color: #000000;
+}
+
+h2 {
     font-family: Roboto Slab;
     font-style: normal;
     font-weight: bold;
-    font-size: 26px;
     line-height: 101.38%;
-    color: #000000;
-  }
-  .info {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .info .info-text {
-    width: 308.47px;
-    height: 174.27px;
-    margin-bottom: 59.22px;
-  }
-  .info .info-text p {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 150%;
-    color: #000000;
-  }
+}
 
-  .img1 {
-    width: 170.55px;
-    height: 160.29px;
-    margin-left: 65px;
-  }
-
-  .middle {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .desktop-image {
-    display: none;
-  }
-
-  .hero p:nth-child(odd) {
+h4 {
+    font-family: Roboto Slab;
     font-style: normal;
     font-weight: bold;
-    font-size: 12px;
     line-height: 130%;
-    color: #000000;
-    width: 69.9px;
-    height: 18.17px;
-    padding-right: 50px;
+}
+
+@media (min-width: 1280px) {
+  h2 {
+      font-size: 3.8vw;
   }
 
-  .hero p:nth-child(even) {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 10px;
-    line-height: 130%;
-    height: 18px;
-    left: 35px;
-    color: #000000;
-    padding-right: 33.33px;
-    padding-top: 0px;
-    margin-top: 0px;
+  h4 {
+      font-size: 1.8vw;
+  }
+
+  .course {
+      margin-bottom: 12vw;
+  }
+
+  .course-container {
+      padding-left: 8vw;
+  }
+
+  .course-header {
+      margin-bottom: 5.5vw;
+  }
+
+  .course-main {
+      display: flex;
+      margin-bottom: 5.2vw;
+  }
+
+  .course-main-content {
+      width: 46vw;
+      margin-right: 14vw;
+  }
+
+  .course-main-content p {
+      font-size: 1.7vw;
+  }
+
+  .course-main-content p.course-main-content-first {
+      margin-bottom: 2.8vw;
+  }
+
+  .course-main-img {
+      display: flex;
+      justify-content: center;
+      padding-right: 10vw;
+  }
+
+  .cameraman {
+      width: 21.8vw;
+  }
+
+  .course-footer-container {
+      display: flex;
+  }
+
+  .course-footer-img {
+      width: 16vw;
+      margin-right: 13vw;
+  }
+
+  .course-footer-content {
+      display: flex;
+      align-items: center;
+  }
+
+  .course-footer-content-box {
+      margin-right: 6.6vw;
+  }
+
+  .course-footer-content-box h4 {
+      margin-bottom: 0.5vw;
+  }
+
+  .course-footer-content-box p {
+      width: 10.5vw;
+      font-size: 1.3vw;
+  }
+
+}
+@media (min-width: 320px) and (max-width: 991px) {
+  h2 {
+      font-size: 7vw;
+  }
+
+  h4 {
+      font-size: 3.2vw;
+  }
+
+  .course {
+      margin-bottom: 12vw;
+  }
+
+  .course-container {
+      padding-left: 10vw;
+  }
+
+  .course-header {
+      margin-bottom: 5.5vw;
+  }
+
+
+  .course-main-content {
+      width: 82vw;
+      margin-bottom: 4.2vw;
+  }
+
+  .course-main-content p {
+      font-size: 3.2vw;
+  }
+
+  .course-main-content p.course-main-content-first {
+      margin-bottom: 5.5vw;
+  }
+
+  .course-main-img {
+      display: flex;
+      justify-content: center;
+      padding-right: 10vw;
+      margin-bottom: 12vw;
+  }
+
+  .cameraman {
+      width: 46vw;
+  }
+
+  .course-footer-img {
+      display: none;
+  }
+
+  .course-footer-content {
+      display: flex;
+      flex-wrap: wrap;
+  }
+
+  .course-footer-content-box {
+      margin-bottom: 9vw;
+      margin-right: 48px;
+  }
+
+  .course-footer-content-box h4 {
+      margin-bottom: 0.2vw;
+  }
+
+  .course-footer-content-box p {
+      width: 23vw;
+      font-size: 2.6vw;
+      padding-right: 2vw;
   }
 }
 
-@media screen and (min-width: 830px) {
-  main {
-    position: relative;
-    font-family: "Roboto";
-    width: 100%;
-    height: 100vh;
-    margin-left: 72px;
-    margin-top: 56px;
-    background: #ffffff;
+@media (min-width: 992px) and (max-width: 1279px) {
+  h2 {
+      font-size: 3.8vw;
   }
 
-  .title {
-    font-family: "Roboto Slab";
-    font-style: normal;
-    font-weight: bold;
-    width: 211.4px;
-    height: 53.86px;
-    font-size: 32px;
-    line-height: 101.38%;
-    color: #000000;
+  h4 {
+      font-size: 1.8vw;
   }
 
-  .info {
-    display: flex;
-    flex-wrap: wrap;
+  .course {
+      margin-bottom: 12vw;
   }
 
-  .info .info-text {
-    width: 383.41px;
-    height: 216.61px;
+  .course-container {
+      padding-left: 8vw;
   }
 
-  .info .info-text p {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 150%;
-    color: #000000;
+  .course-header {
+      margin-bottom: 5.5vw;
   }
 
-  .man {
-    width: 181.86px;
-    height: 182.44px;
-
-    margin-left: 110px;
-    margin-top: 15px;
+  .course-main {
+      display: flex;
+      margin-bottom: 5.2vw;
   }
 
-  .middle {
-    display: flex;
-    flex-wrap: wrap;
+  .course-main-content {
+      width: 46vw;
+      margin-right: 14vw;
   }
 
-  .hero {
-    margin: 70px 55px 0 0;
+  .course-main-content p {
+      font-size: 1.7vw;
   }
 
-  .hero p:nth-child(odd) {
-    width: 87px;
-    height: 23px;
-
-    margin-bottom: -10px;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 15px;
-    line-height: 130%;
-
-    color: #000000;
+  .course-main-content p.course-main-content-first {
+      margin-bottom: 2.8vw;
   }
 
-  .hero p:nth-child(even) {
-    width: 88px;
-    height: 23px;
-    margin-top: 18px;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 11px;
-    line-height: 130%;
-
-    color: #000000;
-  }
-}
-
-@media (min-width: 1440px) {
-  body {
-    max-width: 1280px;
-  }
-  main {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    left: 1.681vw;
-    font-family: "Roboto";
-    width: 1280px;
-    height: 100vh;
-    margin-top: 91px;
-    background: #ffffff;
-  }
-  .title {
-    width: 365px;
-    height: 93px;
-    font-family: "Roboto Slab";
-    font-style: normal;
-    font-weight: bold;
-    font-size: 55px;
-    line-height: 101.38%;
-
-    color: #000000;
-  }
-  .info .info-text {
-    width: 662px;
-    height: 374px;
-  }
-  .info .info-text p {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 150%;
-    color: #000000;
+  .course-main-img {
+      display: flex;
+      justify-content: center;
+      padding-right: 10vw;
   }
 
-  .man {
-    margin-left: 144px;
-    margin-top: 25px;
-  }
-  .man img {
-    width: 366px;
-    height: 344px;
+  .cameraman {
+      width: 21.8vw;
   }
 
-  .middle {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 94px;
+  .course-footer-container {
+      display: flex;
   }
 
-  .hero {
-    margin: 70px 95px 0 0;
+  .course-footer-img {
+      width: 16vw;
+      margin-right: 13vw;
   }
 
-  .hero p:nth-child(odd) {
-    width: 150px;
-    height: 39px;
-
-    margin-bottom: -10px;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 25px;
-    line-height: 130%;
-
-    color: #000000;
+  .course-footer-content {
+      display: flex;
+      align-items: center;
   }
 
-  .hero p:nth-child(even) {
-    width: 150px;
-    height: 39px;
-
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 130%;
-
-    color: #000000;
+  .course-footer-content-box {
+      margin-right: 6.6vw;
   }
 
-  .desktop-image {
-    display: block;
-    width: 231px;
-    height: 218.33px;
-    margin-right: 132px;
+  .course-footer-content-box h4 {
+      margin-bottom: 0.5vw;
+  }
+
+  .course-footer-content-box p {
+      width: 10.5vw;
+      font-size: 1.3vw;
   }
 }
